@@ -9,9 +9,6 @@ Original file is located at
 ## Importacion y extraccion de archivos
 """
 
-from google.colab import files
-uploaded = files.upload()
-
 import zipfile
 import io
 data = zipfile.ZipFile(io.BytesIO(uploaded['64x64_SIGNS.zip']),'r')
